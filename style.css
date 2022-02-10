@@ -13,14 +13,17 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 10px;  
-  background-color: rgb(10, 182, 153);
+  background-color: rgb(14, 14, 14);
 }
 
 .pagination ul{
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   background-color: #fff;
   padding: 8px;
   border-radius: 50px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
 }
 
 .pagination ul li{
@@ -30,15 +33,17 @@ body {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s easy;
-  color: rgb(10, 182, 153);
+  user-select: none;
+  transition: all 0.3s ease;
+  color: rgb(0, 0, 0);
 }
 
 .pagination ul li.numb{
-  border-radius: 50%;
   height: 45px;
   width: 45px;
   margin: 0 3px;
+  line-height: 45px;
+  border-radius: 50%;
 }
 
 .pagination ul li.dots{
@@ -48,6 +53,7 @@ body {
 
 .pagination ul li.btn{
   padding: 0 20px;
+  border-radius: 50px;
 }
 
 .pagination ul li.prev{
@@ -61,7 +67,7 @@ border-radius: 5px 25px 25px 5px;
 .pagination ul li.active,
 .pagination ul li.numb:hover,
 .pagination ul li.btn:hover{
-  background-color: rgb(1, 158, 150);
+  background-color: rgb(3, 3, 3);
   color: #fff;
 }
 
